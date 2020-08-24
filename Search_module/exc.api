@@ -1,0 +1,10 @@
+
+  for qk,qv in texts.items():
+                     vv = '|'.join(map(lambda x: self.escape_special_charatcers(x,1),qv))
+                     cque = "@DATA:"+vv+" @SECTION_TYPE:"+qk
+                     if qk in m_data:
+                         mquery.append(cque)
+                         #querys.append(cque)
+                     else:
+                         querys.append(cque)
+
